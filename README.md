@@ -69,9 +69,9 @@ Here are some basic input/output examples:
 
 | Input | Output |
 |-------|--------|
-| `Not all those who wander are lost.` | `Not all those who wander are lost.` |
-| `Not _all those who wander are lost.` | `Not  a l l  those who wander are lost.` |
-| `Not all those .who wander are lost.` | `Not all those WHO wander are lost.`|
+| `Not all those who wander are lost` | `Not all those who wander are lost` |
+| `Not _all those who wander are lost` | `Not  a l l  those who wander are lost` |
+| `Not all those .who wander are lost` | `Not all those WHO wander are lost`|
 
 When testing your code with the input in `data/markup.txt`, the output should be:
 ```text
