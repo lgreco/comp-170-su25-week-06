@@ -1,0 +1,5 @@
+Markup is a technique where .format .instructions are inserted as part of a 
+text file. In this file, a word precedeed by a .dot should be printed in 
+upper case. And a word precedeed by an .underscore should be typed in expanded 
+form, with spaces between its letters. Such formatting brings attention 
+to .key elements of a text, through _clarity and _focus

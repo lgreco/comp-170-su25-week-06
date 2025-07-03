@@ -14,7 +14,9 @@ There is no final exam for the course. There will be a final assignemnt that wil
 
 ## Code
 
-This assignment has TBDTBDTBDTBDTBDTBDTBDTBDTBDTBD tasks. Write your code in file `week06.py`. The file comes with a bit of testing code. Do not modify the testing code. Write your methods *above* the testing code. If your methods are correct, running the testing code will show that you passed the tests. In addition to correct logic, your methods must have **one and only one** return statement each. Useful comments are required.
+This assignment will give you practice with reading data from files, performing basic numerical analysis, and applying simple text-based markup transformations. You will complete three tasks, each involving file input, processing, and output using Python.
+
+Write your code in file `week06.py`. The file comes with a bit of testing code. Do not modify the testing code. Write your methods *above* the testing code. If your methods are correct, running the testing code will show that you passed the tests. In addition to correct logic, your methods must have **one and only one** return statement each. Useful comments are required.
 
 
 ## Code requirements
@@ -23,17 +25,72 @@ This assignment has TBDTBDTBDTBDTBDTBDTBDTBDTBDTBD tasks. Write your code in fil
 * The following commands should **not** be used: `import`, `break`, `continue`.
 
 
-### 
+### Load and Analyze Temperature Data
+
+You are given a file called `temperatures.txt` in folder `data`, which contains one temperature per line. Write a function that reads all the temperature values from the file into a list of floating-point numbers. The header of your method must be:
+```python
+def load_to_list(filepath: str) -> list[float]:
+```
+
+Then write another method with header
+```python
+def descriptive_statistics(source_data: list[float]) -> None:
+```
+that computes and prints:
+
+* The total number of temperatures
+* The average temperature (rounded to two decimal places)
+* The minimum and maximum temperatures
+
+When testing your code with the input in `data/temperatures.txt` the output should be
+```text
+There are 19 values in the data source.
+The average value is 70.26
+The highest value is 81.0 and the smallest value is 5.0.
+```
 
 
+### Apply Simple Markup to Text
 
+You are also given a file called `markup.txt`, which contains a short passage using a basic markup syntax. A word in the text may be prefixed by:
 
+* a dot (.) to indicate that it should be printed in UPPERCASE.
+* an underscore (_) to indicate that it should be printed in expanded form, with spaces between its letters.
+
+Write a function that reads this file line by line, applies the formatting rules described above, and prints the resulting formatted text to the screen.
+
+Use the function header:
+
+```python
+def apply_markup(filepath: str) -> None:
+```
+
+Here are some basic input/output examples:
+
+| Input | Output |
+|-------|--------|
+| `In a hole in the ground there lived a hobbit` | `In a hole in the ground there lived a hobbit` |
+| `In a hole in the .ground there lived a hobbit` | `In a hole in the GROUND there lived a hobbit` |
+| `In a _hole in the ground there lived a hobbit` | `In a  h o l e  in the ground there lived a hobbit`|
+
+When testing your code with the input in `data/markup.txt`, the output should be:
+```text
+Markup is a technique where FORMAT INSTRUCTIONS are inserted as part of a 
+text file. In this file, a word precedeed by a DOT should be printed in 
+upper case. And a word precedeed by an UNDERSCORE should be typed in expanded 
+form, with spaces between its letters. Such formatting brings attention 
+to KEY elements of a text, through  c l a r i t y  and  f o c u s 
+```
 
 ## Reflect
 
 Review the posted [solutions from the previous assignment](./solutions_week04.py). Compare the posted solutions with your solutions. Notice the differences between your code and the solutions code and describe them. Trivial differences like the names of variables are not that important.
 
 ### Frequent mistakes expected at this point
+
+* **If you did not request the testing code from Leo** your assignemnt is incomplete.
+
+* **Your methods have multiple return.** This usually happens with AI-generated code or with code found online. There is nothing wrong with using these resoruces *as long as you study the code you find, understand how it works, and adjust it to meet the assignemnt specifications.*
 
 * **Code fails one or more tests**. EXCEPT HELLO/HELO
 
