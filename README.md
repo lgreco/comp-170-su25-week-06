@@ -54,8 +54,8 @@ The highest value is 81.0 and the smallest value is 5.0.
 
 You are also given a file called `markup.txt`, which contains a short passage using a basic markup syntax. A word in the text may be prefixed by:
 
-* a dot (.) to indicate that it should be printed in UPPERCASE.
-* an underscore (_) to indicate that it should be printed in expanded form, with spaces between its letters.
+* a dot (`.`) to indicate that it should be printed in UPPERCASE.
+* an underscore (`_) to indicate that it should be printed in expanded form, with spaces between its letters.
 
 Write a function that reads this file line by line, applies the formatting rules described above, and prints the resulting formatted text to the screen.
 
@@ -69,9 +69,9 @@ Here are some basic input/output examples:
 
 | Input | Output |
 |-------|--------|
-| `In a hole in the ground there lived a hobbit` | `In a hole in the ground there lived a hobbit` |
-| `In a hole in the .ground there lived a hobbit` | `In a hole in the GROUND there lived a hobbit` |
-| `In a _hole in the ground there lived a hobbit` | `In a  h o l e  in the ground there lived a hobbit`|
+| `Not all those who wander are lost.` | `Not all those who wander are lost.` |
+| `Not _all those who wander are lost.` | `Not  a l l  those who wander are lost.` |
+| `Not all those .who wander are lost.` | `Not all those WHO wander are lost.`|
 
 When testing your code with the input in `data/markup.txt`, the output should be:
 ```text
