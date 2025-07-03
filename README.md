@@ -84,15 +84,15 @@ to KEY elements of a text, through  c l a r i t y  and  f o c u s
 
 ## Reflect
 
-Review the posted [solutions from the previous assignment](./solutions_week04.py). Compare the posted solutions with your solutions. Notice the differences between your code and the solutions code and describe them. Trivial differences like the names of variables are not that important.
+Review the posted [solutions from the previous assignment](./solutions_week05.py). Compare the posted solutions with your solutions. Notice the differences between your code and the solutions code and describe them. Trivial differences like the names of variables are not that important.
 
 ### Frequent mistakes expected at this point
 
-* **If you did not request the testing code from Leo** your assignemnt is incomplete.
+* **If you did not request the testing code from Leo,** your assignemnt is incomplete.
 
 * **Your methods have multiple return.** This usually happens with AI-generated code or with code found online. There is nothing wrong with using these resoruces *as long as you study the code you find, understand how it works, and adjust it to meet the assignemnt specifications.*
 
-* **Code fails one or more tests**. EXCEPT HELLO/HELO
+* **Code fails one or more tests**. EXCEPT `intersection("hello", "hello")`.
 
 * **Code has no comments** to demonstrate mastery of the program.
 
